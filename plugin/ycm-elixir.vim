@@ -1,4 +1,9 @@
-py import ycmelixir
+let s:version = ''
+if has('python3')
+  let s:version = '3'
+endif
 
-py ycmelixir.hijack_global_ycm_extra_conf()
-py ycmelixir.hijack_ycmd_identifiers_regex()
+exec 'py'.s:version.' import ycmelixir'
+
+exec 'py'.s:version.' ycmelixir.hijack_global_ycm_extra_conf()'
+exec 'py'.s:version.' ycmelixir.hijack_ycmd_identifiers_regex()'
