@@ -1,3 +1,5 @@
+UPDATE: I don't think this plugin is needed now, `slashmili/alchemist.vim` is working fine with `YouCompleteme`.
+
 
 ```
 Plug 'larrylv/ycm-elixir'
